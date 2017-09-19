@@ -6,12 +6,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var Hero = (function () {
-    function Hero() {
-    }
-    return Hero;
-}());
-exports.Hero = Hero;
 var HEROES = [
     { id: 11, name: 'Mr. Nice' },
     { id: 12, name: 'Narco' },
@@ -26,14 +20,13 @@ var HEROES = [
 ];
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'Angular';
         this.title = 'Tour of Heroes';
-        this.hero = {
-            id: 1,
-            name: 'Windstorm'
-        };
         this.heroes = HEROES;
     }
+    AppComponent.prototype.onSelect = function (hero) {
+        this.selectedHeroFromList = hero;
+    };
+    ;
     return AppComponent;
 }());
 AppComponent = __decorate([
