@@ -9,7 +9,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms"); // <-- NgModel lives here
 var app_component_1 = require("./app.component");
-var hero_detail_component_1 = require("./hero-detail/hero-detail.component");
+var hero_detail_component_1 = require("./hero-page/hero-detail/hero-detail.component");
 var hero_page_component_1 = require("./hero-page/hero-page.component");
 // import { HeroService } from './hero/hero.service';
 var AppModule = (function () {

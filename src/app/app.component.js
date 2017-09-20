@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
+var core_2 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
@@ -18,7 +19,8 @@ AppComponent = __decorate([
         templateUrl: './app.component.html',
         styleUrls: [
             './app.component.css'
-        ]
+        ],
+        encapsulation: core_2.ViewEncapsulation.None
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

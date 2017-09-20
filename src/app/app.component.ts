@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: [
     './app.component.css'
     // '../styles.css'
-  ]
+  ],
+  encapsulation: ViewEncapsulation.None
+  // solve the bug that styleUrls not being loaded in Angular ChildComponent
   }
 )
 
